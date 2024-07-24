@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Ubuntu';
+    height: 100vh;
+    text-transform: capitalize;
+}
+
+div img {
+    position: absolute;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 90%;
+}
+
+
+p {
+    font-size: 1.3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+#theName {
+    color: #ff2d53fc;
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    width: 60%;
+    height: 100%;
+    padding: 8rem 5rem;
+    flex-direction: column;
+    gap: 1.7rem;
+    background-color: #fff;
+    transition: opacity 1s ease;
+}
+
+header {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    flex-direction: column;
+    gap: 1.7rem;
+    padding: 10rem 5rem;
+}
+
+header p {
+    color: rgb(155, 160, 168);
+    line-height: 2rem;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+#start-btn {
+    margin-top: 3rem;
+}
+
+.container.one label {
+    font-size: 1.3rem;
+}
+
+.name {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+#age,
+#gender {
+    margin-top: .5rem;
+    width: 75%;
+    height: 2rem;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+#age:hover,
+#gender:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+#age:focus,
+#gender:focus {
+    border: 3px solid #ff2d53fc;
+    border-radius: 2px;
+}
+
+#firstname input,
+#lastname input {
+    margin-top: .5rem;
+    width: 13.8rem;
+    height: 2rem;
+
+}
+
+input[type='text'] {
+    border: #ccc solid 1px;
+    border-radius: 3px;
+    outline: none;
+    box-shadow: 2px 2px 5px #cccccc80;
+}
+
+input:hover,
+input:hover {
+    cursor: text
+}
+
+input:focus,
+input:focus,
+textarea:focus {
+    border: 3px solid #ff2d53fc;
+}
+
+div button,
+header button {
+    font-size: 20px;
+    background-color: #ff2d53bb;
+    padding: 10px 20px;
+    border-radius: 7px;
+    color: #fff;
+    border: none;
+}
+
+div button:active {
+    border: 2px solid #fff;
+    outline: 5px solid #ff2d53fc;
+}
+
+div button:hover,
+header button:hover {
+    background-color: #ff2d53;
+    cursor: pointer;
+}
+
+
+
+.container.one,
+.container.two,
+.container.three,
+.container.four,
+.container.five,
+.container.six {
+    position: absolute;
+    top: 0;
+    transform: translateX(-200%);
+    transition: opacity 1s ease .2s, transform .5s ease;
+}
+
+
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+input[type="radio"]:hover,
+input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+
+input[type=radio]:checked,
+input[type="checkbox"]:checked {
+    accent-color: #ff2d53;
+}
+
+.question-2 input {
+    outline: none;
+    width: 75%;
+    height: 2rem;
+    margin-top: 1rem;
+}
+
+
+.question-5,
+.question-6,
+.question-7,
+.question-8 {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+
+
+textarea {
+    font-size: 1.2rem;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 1rem;
+    width: 75%;
+}
+
+.circle ion-icon {
+    width: 4rem;
+    height: 4rem;
+    color: #ff2d53;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: rgba(255, 91, 126, 0.1);
+}
+
+.nextBtn ion-icon {
+    translate: 5px 3px;
+}
+
+hr {
+    width: 70%;
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.finalBtn {
+    width: 50%;
+}
+
+#back-btn {
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+    color: #000;
+    width: 2rem;
+    height: 1.5rem;
+    visibility: hidden;
+}
+
+#back-btn:hover {
+    cursor: pointer;
+    color: #ff2d53;
+}
+
+.back-btn {
+    border: transparent;
+}

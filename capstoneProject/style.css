@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Raleway&family=Open+Sans&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans';
+    text-transform: capitalize;
+}
+
+ion-icon {
+    width: 5rem;
+    height: 5rem;
+    color: yellow;
+    background-color: black;
+}
+
+.hero {
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('assets/hero.jpg') center no-repeat;
+    background-size: cover;
+    margin-bottom: 2rem;
+}
+
+.skills,
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* this is the card inside the warppers up top */
+.skill,
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 10px;
+}
+
+
+
+.skill h3 {
+    margin: 1rem 0;
+}
+
+.container {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 1rem;
+}
+
+
+img {
+    width: 10rem;
+    height: 10rem;
+}
+
+h1 {
+    font-family: 'Black Ops One';
+    font-size: 4rem;
+    color: white;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-family: Raleway;
+}
+
+footer {
+    height: 10rem;
+    background-color: #427D9D;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+}
+
+.soical {
+    height: 70%;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+}
+
+.container-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin: 2rem 0;
+}
+
+.project {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10px;
+    background: #427d9d51;
+    box-shadow: 6px 6px 12px #bebebe,
+        -6px -6px 12px #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #164863;
+}
+
+a img {
+    object-fit: cover;
+    object-position: 20%;
+    border-radius: 50%;
+    transition: .5s ease;
+}
+
+a img:hover,
+.active {
+    translate: 0 -10px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+hr {
+    margin: 3rem auto;
+    width: 75%;
+    height: 7px;
+    border-radius: 15%;
+    background-color: #427D9D;
+}
+
+@media (max-width:700px) {
+
+    .container {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+    }
+
+    .container-2 {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+    }
+}

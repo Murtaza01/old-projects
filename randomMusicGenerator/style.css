@@ -1,0 +1,33 @@
+body {
+    background-color: rgba(68, 79, 139, 0.717);
+}
+
+
+section {
+    text-align: center;
+}
+
+ul {
+    font-weight: 700;
+    font-size: large;
+}
+
+li {
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+button {
+    border: 1px solid black;
+    padding: 15px 8px;
+    background-color: rgba(10, 63, 237, 0.674);
+    font-size: large;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(243, 6, 6, 0.811)
+}

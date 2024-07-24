@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Exam Stress Survey</h1>
+        <p>The goal of this survey is to gather information
+            about stress during exams relating to students and thier
+            parents/environment, based on people answers to this survey we can provide a suitable advice and
+            recommendations to better manage stress.</p>
+        <div>
+            <button id="start-btn">Start</button>
+        </div>
+    </header>
+    <div>
+        <img src="https://prod-fillout-form-static-images.s3.us-west-2.amazonaws.com/orgid-36827/flowpublicid-gtC73PZ93ius/widgetid-undefined/nVnHojNbKPz2qHQuxpXEV7/stacked-books.jpeg?a=7q14pZzXaAmAv3Mu92qaWw"
+            alt="">
+    </div>
+    <form action="#">
+        <div class="container one">
+            <div class="name">
+                <div id="firstname">
+                    <p>
+                        <label for="firstName">first name</label>
+                    </p>
+                    <input required placeholder="Enter Your First Name" type="text" id="firstName">
+                </div>
+                <div id="lastname">
+                    <p>
+                        <label for="lastName">last name</label>
+                    </p>
+                    <input required placeholder="Enter Your last Name" type="text" id="lastName">
+                </div>
+            </div>
+            <div class="age">
+                <p>
+                    <label for="age">Age</label>
+                </p>
+                <select name="" id="age">
+                    <option value=""></option>
+                    <option value="">12-17</option>
+                    <option value="">18-22</option>
+                    <option value="">22+</option>
+                </select>
+
+            </div>
+            <div class="gender">
+                <p>
+                    <label for="gender">Gender</label>
+                </p>
+                <select name="" id="gender">
+                    <option value=""></option>
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                </select>
+            </div>
+            <div>
+                <button class="nextBtn">Next <ion-icon name="arrow-forward-sharp"></ion-icon></button>
+            </div>
+
+        </div>
+    </form>
+    <form action="#">
+        <div class="container two">
+            <div class="question-1">
+                <fieldset>
+                    <p>How Often Do you feel stress in your life?</p>
+                    <div>
+                        <input type="radio" id="radio-1" name="time">
+                        <label for="radio-1">everyday</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="radio-2" name="time">
+                        <label for="radio-2">Often</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="radio-3" name="time">
+                        <label for="radio-3">Sometimes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="radio-4" name="time">
+                        <label for="radio-4">Rarely</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="question-2">
+                <p>From Scale 1-10, How Would You Rate Your Stress Before an Exam? </p>
+                <input type="number" min="1" max="10">
+            </div>
+            <div>
+                <button class="nextBtn">Next <span><ion-icon name="arrow-forward-outline"></ion-icon></span></button>
+
+            </div>
+
+        </div>
+    </form>
+
+    <form action="#">
+        <div class="container three">
+            <div class="question-3">
+
+                <fieldset>
+                    <p>How Well Do you Manage Stress?</p>
+                    <div>
+                        <input type="radio" id="radio-1" name="manage">
+                        <label for="radio-1">very well</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="radio-2" name="manage">
+                        <label for="radio-2">well enough</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="radio-3" name="manage">
+                        <label for="radio-3">not so well</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="radio-4" name="manage">
+                        <label for="radio-4">not well at all</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="question-4">
+                <p>What Do You Do When You Are Stressed?</p>
+                <textarea name="" id="" rows="5"></textarea>
+            </div>
+            <div>
+                <button class="nextBtn">Next <span><ion-icon name="arrow-forward-outline"></ion-icon></span></button>
+            </div>
+
+        </div>
+    </form>
+
+    <form action="#">
+        <div class="container four">
+            <div class="question-5">
+                <p>What Difficultes You Face When You Have an Exam?</p>
+                <div>
+                    <input type="checkbox" id="1">
+                    <label for="1">Trubole Concentrating And Paying Attention</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="2">
+                    <label for="2">Time Management</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="3">
+                    <label for="3">Procrastination</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="4">
+                    <label for="4">Others</label>
+                </div>
+            </div>
+            <div class="question-6">
+                <p>What Are The Things That Might Help You With Your Stress?</p>
+                <div>
+                    <input type="checkbox" id="support">
+                    <label for="support">Support From a Family Member or Friends</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="hobbies">
+                    <label for="hobbies">Doing Your Favourite Activity (Hobbies)</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="self-care">
+                    <label for="self-care">Self-Care (Exercise, Meditate...Etc)</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="others">
+                    <label for="others">Others</label>
+                </div>
+            </div>
+            <div class="nextBtnWarpper">
+                <button class="nextBtn">Next <span><ion-icon name="arrow-forward-outline"></ion-icon></span></button>
+            </div>
+
+        </div>
+    </form>
+    <form action="#">
+        <div class="container five">
+            <div class="question-7">
+                <p>What Motivates You academically?</p>
+                <div>
+                    <input type="checkbox" id="goal">
+                    <label for="goal">Your Goals (Going to a specific College)</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="passion">
+                    <label for="passion">Your Passion For a Specfic Topic </label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Job">
+                    <label for="Job">Having a Good Earning Job</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Mom">
+                    <label for="Mom">Mom Won't Be Sad :)</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="other">
+                    <label for="other">Other</label>
+                </div>
+            </div>
+            <div class="question-8">
+                <p>What Hinders your Performance academically?</p>
+                <div>
+                    <input type="checkbox" id="support">
+                    <label for="support">
+                        Mental Health Issue (Depression,ADHD...Etc)</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="hobbies">
+                    <label for="hobbies">Personal Health issues</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="self-care">
+                    <label for="self-care">Financial Issues</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="others">
+                    <label for="others">Not Having support From Family/Friends</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="others">
+                    <label for="others">Other</label>
+                </div>
+            </div>
+            <div>
+                <button class="nextBtn">Next <span><ion-icon name="arrow-forward-outline"></ion-icon></span></button>
+            </div>
+        </div>
+    </form>
+    <form action="#">
+        <div class="container six">
+
+            <div class="sub-container">
+                <span class="circle">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                </span>
+                <h2>Thank you <span id="theName"></span> </h2>
+                <p>Your respones Has been Recorded :)</p>
+                <hr>
+                <button class="finalBtn" onclick="window.location.reload()">Fill Again</button>
+            </div>
+        </div>
+    </form>
+    <button class="back-btn"><ion-icon id="back-btn" name="arrow-back-sharp"></ion-icon></button>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

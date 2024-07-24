@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    perspective: 1000px;
+    perspective-origin: bottom top;
+    background-color: black;
+}
+
+
+@keyframes slide {
+    from {
+        transform: rotateY(0deg) rotateX(360deg) rotateZ(0);
+    }
+
+    to {
+        transform: rotateY(360deg) rotateX(0deg) rotateZ(360deg);
+    }
+}
+
+h1 {
+    font-size: 20rem;
+    animation: slide 7s linear infinite alternate;
+    color: white;
+}

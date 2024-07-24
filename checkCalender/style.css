@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+h3 {
+    border: white solid 1px;
+    padding: 1rem 1.5rem;
+    background-color: #eee;
+    font-size: 1.4rem;
+
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    border: white solid 1px;
+    padding: .5rem 0;
+    background-color: #eee;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+
+p.checked {
+    text-decoration: line-through 3px rgba(232, 14, 14, 0.83);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
